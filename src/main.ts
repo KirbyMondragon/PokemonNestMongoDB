@@ -12,6 +12,11 @@ async function bootstrap() {
       //Con whitelist hacemos que solo se reciban los datos que necesitamos, pero no marca errores 
       forbidNonWhitelisted: true,
       //forbidNonWhitelisted nos marca errores al enviar datos que no son requeridos por la ruta
+      transform: true,
+      //Transform nos ayuda a transformar la data a la que esta en los DTOs
+      transformOptions: {
+        enableImplicitConversion:true,
+      }
     }),
   );
   
