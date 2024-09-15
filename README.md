@@ -87,7 +87,7 @@ http://localhost:3000/api/v2/seed
 
 ```
 
-## Este Proyecto utiliza un .env
+## Este Proyecto utiliza un __.env__
 
 ```
 NODE_ENV=development
@@ -95,6 +95,26 @@ MONGODB=mongodb://localhost:27017/nest-pokemon
 PORT=3000
 DEFAULT_LIMIT=7
 ```
+
+
+
+## Manera de hacer despliegue 
+
+1. Crear el archivo ``` .env.prod ```
+2. Llenar las variables de entorno de prod
+3. Crear la imagen 
+```
+
+ docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+
+```
+
+4. recargar la imagen si ya la tenias 
+```
+ docker-compose -f docker-compose.prod.yaml --env-file .env.prod up -d
+```
+
+* Nest
 
 
 ## STACK Utilizado
