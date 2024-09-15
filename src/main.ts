@@ -22,7 +22,8 @@ async function bootstrap() {
   
   app.setGlobalPrefix("/api/v2")
   //Con esto cambiamos la ruta de todos los endpoints agregando con prefijo lo que este metodo
-  await app.listen(3000);
+  await app.listen(process.env.PORT);
+  console.warn(`The app is running on the Port: ${process.env.PORT}`)
 }
 
 bootstrap();

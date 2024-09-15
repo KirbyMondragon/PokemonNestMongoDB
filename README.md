@@ -87,6 +87,15 @@ http://localhost:3000/api/v2/seed
 
 ```
 
+## Este Proyecto utiliza un .env
+
+```
+NODE_ENV=development
+MONGODB=mongodb://localhost:27017/nest-pokemon
+PORT=3000
+DEFAULT_LIMIT=7
+```
+
 
 ## STACK Utilizado
 
